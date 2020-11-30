@@ -108,6 +108,11 @@ hr {
   color: var(--dark-gray);
 }
 
+.hero small {
+  text-align: center;
+  display: block;
+}
+
 .hero .hero-heading .heading-inverted {
   color: var(--primary-color);
 }
