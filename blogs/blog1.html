@@ -24,27 +24,72 @@
     <header class="hero">
       <img class="hero-img" src="../images/blog.svg" />
       <h1 class="hero-heading">
-        sample
-        <span class="heading-inverted">blog</span> 1
+        What are <span class="heading-inverted">SVGs</span> and how to use them?
       </h1>
-      <small>November, 2020</small>
+      <small>August, 2021</small>
     </header>
 
     <section class="section">
       <div class="container container-center">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos tenetur
-          ratione libero commodi temporibus blanditiis iste exercitationem
-          eligendi ipsum laboriosam quis nam aliquid culpa veritatis cupiditate
-          illum tempora sit, rem molestiae beatae laborum nisi sint mollitia!
-          Nemo sit ipsam aliquam hic magni voluptas repellendus excepturi itaque
-          enim maiores! Dolor ea autem ipsum ex incidunt quis reprehenderit
-          minus atque maxime fuga doloremque quaerat voluptatem dolore nesciunt
-          quasi ipsa, aliquid libero accusantium culpa, voluptas aliquam nostrum
-          perspiciatis. Iusto sit tenetur repellat blanditiis officia eos
-          tempora! Tenetur molestias repudiandae quasi culpa consequatur
-          possimus illo porro, ullam perspiciatis incidunt magni sunt officiis
-          autem enim.
+        <p class="text-justify">
+          Scalable Vector Graphics or SVG is an image format that’s like HTML
+          for 2D graphics. The popular image formats (.png and .jpg) are raster
+          images, that is they use a grid of tiny pixels to create an image.
+          And, thus when we try zooming into the picture it starts to look
+          grainy. On the other hand, vector images can be scaled to any size
+          without losing their resolution, because instead of pixels its
+          appearance is based on geometry. They are drawn from mathematically
+          declared shapes and curves and such, so pixels are no limitation.
+        </p>
+        <p class="text-justify">
+          The size of an SVG file depends on how complex it is and not on how
+          "large" it is. As it doesn’t matter at what size the SVG is rendered.
+          A 100×100 pixel raster image has 10,000 pixels of information, in
+          contract SVG is just instructions on how to draw something and if
+          these instructions are simple enough, they can be quite a bit smaller
+          than having to store data on each pixel. There is no set formula to
+          decide which format is more suitable, but it makes more sense to use
+          vector for the following :
+        </p>
+        <ul>
+          <li>Logos</li>
+          <li>Icons</li>
+          <li>Simple illustrations</li>
+          <li>Charts</li>
+          <li>Maps</li>
+        </ul>
+        <p class="text-justify">
+          To use SVG as an image, we can simply do it using img tag.
+        </p>
+
+        <code class="code">&lt;img src="image.svg" alt="image"&gt;</code>
+        <p class="text-justify">
+          But, perhaps the best way to use SVG is Inline SVG – that is, putting
+          SVG code right into your HTML. Since this way, there are no requests
+          being made it’s faster and as it’s directly rendered into the DOM, we
+          can affect it using CSS or JavaScript.
+        </p>
+        <p class="text-justify">
+          We can create SVGs with tools like Figma or illustrator or by writing
+          the code directly.
+        </p>
+        <code class="code">
+          &lt;svg viewBox="0 0 100 100"&gt;<br />
+          &emsp;&emsp;&lt;rect x="10" y="10" width="20%" height="20%" /&gt;
+          <br />
+          &emsp;&emsp;&lt;circle /&gt;<br />
+          &emsp;&emsp;&lt;polygon/&gt; <br />
+          &lt;/svg&gt;
+        </code>
+        <p class="text-justify">
+          Here, inside the SVG tag viewBox attribute is used to define a
+          coordinate system that gives us a frame with a width and height of 100
+          units, on which we can draw graphics like basic shapes by adding
+          elements like rectangle circle and polygon. We can position the
+          rectangle by defining its x-y value on the view box then give it a
+          size that can be absolute or responsive values. We can change its
+          color using the fill attribute and add an outline using the stroke
+          attribute.
         </p>
       </div>
     </section>

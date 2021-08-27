@@ -24,28 +24,100 @@
     <header class="hero">
       <img class="hero-img" src="../images/blog.svg" />
       <h1 class="hero-heading">
-        sample
-        <span class="heading-inverted">blog</span> 2
+        5 tips for making
+        <span class="heading-inverted">responsive layouts </span>
       </h1>
-      <small>November, 2020</small>
+      <small>August, 2021</small>
     </header>
 
     <section class="section">
       <div class="container container-center">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos tenetur
-          ratione libero commodi temporibus blanditiis iste exercitationem
-          eligendi ipsum laboriosam quis nam aliquid culpa veritatis cupiditate
-          illum tempora sit, rem molestiae beatae laborum nisi sint mollitia!
-          Nemo sit ipsam aliquam hic magni voluptas repellendus excepturi itaque
-          enim maiores! Dolor ea autem ipsum ex incidunt quis reprehenderit
-          minus atque maxime fuga doloremque quaerat voluptatem dolore nesciunt
-          quasi ipsa, aliquid libero accusantium culpa, voluptas aliquam nostrum
-          perspiciatis. Iusto sit tenetur repellat blanditiis officia eos
-          tempora! Tenetur molestias repudiandae quasi culpa consequatur
-          possimus illo porro, ullam perspiciatis incidunt magni sunt officiis
-          autem enim.
+        <p class="text-justify">
+          Responsive Web Design is about using HTML and CSS to automatically
+          resize, hide, shrink, or enlarge, a website, to make it look good on
+          all devices.
         </p>
+        <ol>
+          <li>
+            The right mindset
+            <p class="text-justify">
+              Always remember that, even before you write a single line of CSS,
+              the website is responsive and the layout is going to work on
+              really big screens and really small screens, though it might not
+              be pretty on really big screens as it might be kind of hard to
+              read but the website adapts to the viewport no matter what you do.
+              Understanding this can really help us out when we're writing our
+              CSS. and this means that we just have to take a little bit of a
+              different approach in getting things working.
+            </p>
+          </li>
+
+          <li>
+            Start with global styling
+            <p class="text-justify">
+              Before starting to work on the layout, setting up things like
+              typography, colour and backgrounds can take the website far along.
+              The layout might not look beautiful, but it will and won’t be
+              broken at any point. This also helps in organising your CSS by
+              keeping the common styling first.
+            </p>
+          </li>
+          <li>
+            Avoid fixed sizes
+            <p class="text-justify">
+              Setting fixed height or a fixed width, will cause problems on
+              smaller devices.
+            </p>
+            <p class="text-justify">
+              Setting the <em>width</em> of a block-level element will prevent
+              it from stretching out to the edges of its container. The problem
+              occurs when the browser window is smaller than the width of the
+              element, the browser then adds a horizontal scrollbar to the page.
+              Using <em>max-width</em> instead, will improve the browser's
+              handling of small windows as then it will be allowed to shrink if
+              it gets smaller but, if it gets too big it’ll stick to that width.
+            </p>
+            <p class="text-justify">
+              Similarly, if you're setting a like 100 viewport height to setup a
+              big hero area that needs to fill up the whole thing, setting it as
+              a <em>min-height</em> will just solve potential problems that you
+              might run into when you start going on to narrower viewports.
+            </p>
+          </li>
+          <li>
+            Use media queries to add complexity
+            <p class="text-justify">
+              Media queries are a way to target browser by certain
+              characteristics, features, and user preferences, then apply styles
+              or run other code based on those things. It uses the
+              <em>@media</em> rule to include a block of CSS properties only if
+              a certain condition is true. Web pages with rows and columns often
+              don’t look good on a small screen. Media queries can help with
+              that. We can add a breakpoint where certain parts of the design
+              will behave differently on each side of the breakpoint. But one
+              thing that's really important is to try to avoid having too many
+              break points and for a lot of designs we can get away with one or
+              sometimes two break points, since a lot of times you can do
+              general grouping.
+            </p>
+          </li>
+          <li>
+            Take advantage of modern CSS
+            <p class="text-justify">
+              By using more modern CSS approaches we won’t have to worry about
+              break points as much, in fact some people also advice on avoiding
+              to use breakpoints in the first place. For example, using
+              <em>min()</em> and <em>max()</em> max() functions to set the
+              smallest or largest value from a list of comma-separated
+              expressions as the value of a CSS property. The
+              <em>clamp()</em> CSS function clamps a value between an upper and
+              lower bound. It enables selecting a middle value within a range of
+              values between a defined minimum and maximum. It takes three
+              parameters: a minimum value, a preferred value, and a maximum
+              allowed value.
+            </p>
+          </li>
+        </ol>
       </div>
     </section>
   </body>

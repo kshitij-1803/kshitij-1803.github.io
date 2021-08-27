@@ -65,6 +65,19 @@ hr {
   padding: 0rem 0.5rem;
 }
 
+/* text */
+
+.text-justify {
+  text-align: justify;
+}
+
+.code {
+  background: var(--off-white);
+  padding: 1rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
 /* navigation */
 
 .navigation {
